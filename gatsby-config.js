@@ -1,12 +1,28 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
- */
+const path = require("path")
 
-/**
- * @type {import('gatsby').GatsbyConfig}
- */
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
-  plugins: [],
+  siteMetadata: {
+    title: "My Portfolio",
+    author: "Jamil Khan",
+    logo: "JKhan",
+  },
+  plugins: [
+    `gatsby-plugin-netlify`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
+    
+    `gatsby-plugin-image`,
+    
+  ],
 }
