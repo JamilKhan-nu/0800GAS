@@ -14,14 +14,14 @@ function Footer() {
   `)
   return (
     <div className={footerStyles.footer}>
-      <h5>
-        Thanks for visiting my little digital corner. Your visit is my
-        motivation.
-      </h5>
       <p>
-        Designed & Developed by {data.site.siteMetadata.author}, Copyright ©
-        2023
+      North-East 24 Hours Emergency Call out- 07903960889, Email: info@0800gas.co.uk, Facebook, Instagram
       </p>
+      <h5>
+      Designed & Developed by {data.site.siteMetadata.author}, Copyright ©
+        2023
+      </h5>
+      
     </div>
   )
 }
