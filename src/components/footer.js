@@ -14,13 +14,13 @@ function Footer() {
   `)
   return (
     <div className={footerStyles.footer}>
-      <p>
-      North-East 24 Hours Emergency Call out- 07903960889, Email: info@0800gas.co.uk, Facebook, Instagram
-      </p>
       <h5>
+      North-East 24 Hours Emergency Call out- 07903960889, Email: info@0800gas.co.uk, Facebook, Instagram
+      </h5>
+      <p>
       Designed & Developed by {data.site.siteMetadata.author}, Copyright ©
         2023
-      </h5>
+      </p>
       
     </div>
   )

@@ -267,3 +267,99 @@
         
     }
 }  
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 490px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .herosection {
+        h4 {
+            font-size: 1rem;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+        }
+        h5 {
+            font-size: 1.5rem;  
+        }
+        
+    }
+    .hero-image {
+        display: none;
+    }
+
+    .serviceSection {
+        h2 {
+            font-size: 2rem;
+        }   
+    }
+
+    .aboutus {
+        display: flex;
+        flex-direction: column;
+
+        .aboutimg {
+            display: none;
+        }
+
+        .aboutinfo {
+            h5 {
+                font-size: 1.5rem;
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+            h1 {
+                font-size: 3.8rem;
+                text-align: center;
+            }
+        }
+    }
+
+    .reviewsection {
+        h2 {
+            font-size: 2rem;
+        }
+        
+    }
+    .reviewcard {
+        margin-left: .4rem;
+    }
+
+    .whyus {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 0;
+        margin-top: 13rem;
+        z-index: 7;
+        
+        padding: 3rem 3rem;
+        width: 70rem;
+        height: 18rem;
+        border: none;
+        background: white;
+        margin-bottom: 14rem;
+    }
+
+    .whoweare {
+        height: 15rem;
+        width: 18rem;
+        
+    }
+
+    .howweworksection {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        .howweworks {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+}
